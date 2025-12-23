@@ -9,15 +9,15 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Plane" size={32} className="text-primary" />
-            <h1 className="text-2xl font-bold text-primary">SkyWings</h1>
+            <Icon name="Train" size={32} className="text-primary" />
+            <h1 className="text-2xl font-bold text-primary">РЖД Экспресс</h1>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#" className="text-foreground hover:text-primary transition-colors">Главная</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
-            <a href="#destinations" className="text-foreground hover:text-primary transition-colors">Направления</a>
+            <a href="#destinations" className="text-foreground hover:text-primary transition-colors">Маршруты</a>
             <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
-            <Button>Забронировать</Button>
+            <Button>Купить билет</Button>
           </nav>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Icon name="Menu" size={24} />
@@ -28,8 +28,8 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://cdn.poehali.dev/projects/186540d5-87dd-41c7-8711-9560851a91c1/files/172bd31a-bfd4-45a6-81e2-ca41ab719a0b.jpg"
-            alt="Airplane"
+            src="https://cdn.poehali.dev/projects/186540d5-87dd-41c7-8711-9560851a91c1/files/c4fbc193-a977-44f1-a3b4-f5529e50f509.jpg"
+            alt="Train"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
@@ -37,10 +37,10 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
           <h2 className="text-5xl md:text-7xl font-bold mb-6">
-            Полёты в <span className="text-accent">будущее</span>
+            Путешествия в <span className="text-accent">комфорте</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">
-            Надёжная авиакомпания с 20-летней историей. Ваш комфорт — наш приоритет.
+            Надёжный железнодорожный перевозчик. Безопасность и пунктуальность — наш приоритет.
           </p>
           
           <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 md:p-8 max-w-4xl mx-auto shadow-2xl">
@@ -79,7 +79,7 @@ const Index = () => {
               </div>
             </div>
             <Button size="lg" className="w-full md:w-auto px-12 text-lg h-12">
-              Найти рейсы
+              Найти поезда
               <Icon name="Search" size={20} className="ml-2" />
             </Button>
           </div>
@@ -103,26 +103,26 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-scale-in border-2">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <Icon name="Plane" size={32} className="text-primary" />
+                  <Icon name="Train" size={32} className="text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Регулярные рейсы</CardTitle>
+                <CardTitle className="text-2xl">Скоростные поезда</CardTitle>
                 <CardDescription className="text-base">
-                  Более 150 направлений по всему миру с удобным расписанием
+                  Более 200 направлений по России с комфортным расписанием
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Ежедневные вылеты</span>
+                    <span>Ежедневные рейсы</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Современный парк самолётов</span>
+                    <span>Современные составы</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Онлайн-регистрация</span>
+                    <span>Электронные билеты</span>
                   </li>
                 </ul>
               </CardContent>
@@ -133,24 +133,24 @@ const Index = () => {
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
                   <Icon name="Star" size={32} className="text-accent" />
                 </div>
-                <CardTitle className="text-2xl">Бизнес-класс</CardTitle>
+                <CardTitle className="text-2xl">СВ и Люкс</CardTitle>
                 <CardDescription className="text-base">
-                  Премиум-комфорт для ваших деловых и личных поездок
+                  Премиум-купе для комфортных путешествий на дальние расстояния
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-accent" />
-                    <span>Комфортные кресла</span>
+                    <span>Комфортные купе</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-accent" />
-                    <span>Приоритетная регистрация</span>
+                    <span>Постельное бельё</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-accent" />
-                    <span>VIP-залы ожидания</span>
+                    <span>Питание включено</span>
                   </li>
                 </ul>
               </CardContent>
@@ -190,9 +190,9 @@ const Index = () => {
       <section id="destinations" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Популярные направления</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Популярные маршруты</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Выбирайте лучшие маршруты по выгодным ценам
+              Выбирайте лучшие направления по выгодным ценам
             </p>
           </div>
 
@@ -229,16 +229,16 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="animate-fade-in">
-              <div className="text-5xl font-bold text-accent mb-2">150+</div>
-              <p className="text-lg">Направлений</p>
+              <div className="text-5xl font-bold text-accent mb-2">200+</div>
+              <p className="text-lg">Маршрутов</p>
             </div>
             <div className="animate-fade-in">
-              <div className="text-5xl font-bold text-accent mb-2">5M+</div>
-              <p className="text-lg">Довольных пассажиров</p>
+              <div className="text-5xl font-bold text-accent mb-2">100M+</div>
+              <p className="text-lg">Пассажиров в год</p>
             </div>
             <div className="animate-fade-in">
-              <div className="text-5xl font-bold text-accent mb-2">98%</div>
-              <p className="text-lg">Рейтинг надёжности</p>
+              <div className="text-5xl font-bold text-accent mb-2">99.2%</div>
+              <p className="text-lg">Рейсов вовремя</p>
             </div>
           </div>
         </div>
