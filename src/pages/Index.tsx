@@ -93,9 +93,9 @@ const Index = () => {
       <section id="services" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Стоимость билетов</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Полный спектр услуг для комфортного путешествия
+              Выгодные цены на все типы вагонов и направления
             </p>
           </div>
 
@@ -105,24 +105,28 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <Icon name="Train" size={32} className="text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Скоростные поезда</CardTitle>
+                <CardTitle className="text-2xl">Плацкарт</CardTitle>
                 <CardDescription className="text-base">
-                  Более 200 направлений по России с комфортным расписанием
+                  Экономичный вариант для путешествий по России
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="mb-4">
+                  <div className="text-4xl font-bold text-primary mb-2">от 1 200 ₽</div>
+                  <p className="text-sm text-muted-foreground">за место</p>
+                </div>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Ежедневные рейсы</span>
+                    <span>54 места в вагоне</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Современные составы</span>
+                    <span>Постельное бельё</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Электронные билеты</span>
+                    <span>Розетки 220В</span>
                   </li>
                 </ul>
               </CardContent>
@@ -133,24 +137,28 @@ const Index = () => {
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
                   <Icon name="Star" size={32} className="text-accent" />
                 </div>
-                <CardTitle className="text-2xl">СВ и Люкс</CardTitle>
+                <CardTitle className="text-2xl">Купе</CardTitle>
                 <CardDescription className="text-base">
-                  Премиум-купе для комфортных путешествий на дальние расстояния
+                  Комфортные 4-местные купе для спокойного путешествия
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="mb-4">
+                  <div className="text-4xl font-bold text-accent mb-2">от 2 500 ₽</div>
+                  <p className="text-sm text-muted-foreground">за место</p>
+                </div>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-accent" />
-                    <span>Комфортные купе</span>
+                    <span>4 места в купе</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-accent" />
-                    <span>Постельное бельё</span>
+                    <span>Закрывающаяся дверь</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-accent" />
-                    <span>Питание включено</span>
+                    <span>Постель + полотенце</span>
                   </li>
                 </ul>
               </CardContent>
@@ -161,24 +169,28 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <Icon name="Luggage" size={32} className="text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Багаж</CardTitle>
+                <CardTitle className="text-2xl">СВ и Люкс</CardTitle>
                 <CardDescription className="text-base">
-                  Гибкие тарифы и удобные условия перевозки багажа
+                  Премиальный комфорт для дальних путешествий
                 </CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="mb-4">
+                  <div className="text-4xl font-bold text-primary mb-2">от 6 000 ₽</div>
+                  <p className="text-sm text-muted-foreground">за купе (2 места)</p>
+                </div>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>До 30 кг в эконом-классе</span>
+                    <span>2 места в купе</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Бесплатная ручная кладь</span>
+                    <span>Душ и туалет</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" size={18} className="text-primary" />
-                    <span>Перевозка спортинвентаря</span>
+                    <span>Питание в вагоне</span>
                   </li>
                 </ul>
               </CardContent>
